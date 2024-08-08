@@ -1,0 +1,239 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  transition: .3s ease;
+}
+/*
+- Very Dark Blue: hsl(235, 21%, 11%)
+- Very Dark Desaturated Blue: hsl(235, 24%, 19%)
+- Light Grayish Blue: hsl(234, 39%, 85%)
+- Light Grayish Blue (hover): hsl(236, 33%, 92%)
+- Dark Grayish Blue: hsl(234, 11%, 52%)
+- Very Dark Grayish Blue: hsl(233, 14%, 35%)
+- Very Dark Grayish Blue: hsl(237, 14%, 26%)
+*/
+
+/*
+- Very Light Gray: hsl(0, 0%, 98%)
+-  Very Light Grayish Blue: hsl(236,33%, 92%)
+- Light Grayish Blue: hsl(233, 11%, 84%)
+- Dark Grayish Blue: hsl(236, 9%, 61%)
+- Very Dark Grayish Blue: hsl(235, 19%, 35%)
+*/
+@media (width < 540px){
+  header, #root div{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #btn-1{
+    display: none!important;
+  }
+  .second{
+    opacity: 1!important;
+  }
+  #btn-2{
+    margin-top: 14px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+  #btn-2 button{
+    border: none;
+    background-color: transparent;
+    margin: 0 4vw;
+    color: inherit;
+  }
+  #bonus{
+    display: none;
+  }
+}
+@media (width >= 540px){
+  header, #root div{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #btn-2{
+    display: none;
+  }
+}
+body{
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 18px;
+}
+/* HEADING START */
+header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10vh;
+  margin-bottom: 28px;
+}
+header h1{
+  color: white;
+}
+header button{
+  background: transparent;
+  border: none;
+}
+header button:hover{
+  cursor: -moz-grab;
+}
+/* HEADING END */
+
+/* DIV WITHIN THE INPUT START */
+#form{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  margin-bottom: 23px;
+}
+#form img{
+  margin-right: 14px;
+}
+#form input{
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding: 0 30px;
+  color: inherit;
+}
+#form input:focus{
+  outline: none;
+}
+/* DIV WITHIN THE INPUT END */
+#bonus{
+  margin-top: 4vh;
+  text-align: center;
+}
+#tasklist{
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.taskname{
+  width: 80%;
+  padding-left: 10px
+}
+#tasklist button{
+  background: transparent;
+}
+#tasklist table{
+  height: 100%;
+  width: 100%;
+}
+#tasklist ul{
+  height: 89%;
+  overflow: hidden auto;
+  list-style-type: none;
+  padding: 0;
+}
+#tasklist li{
+  border-bottom: .5px solid hsl(236, 33%, 92%);
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+  position: relative;
+}
+#tasklist li:hover, #tasklist li:hover .second{
+  color: inherit;
+  font-weight: 800;
+  cursor: default;
+  opacity: 1;
+}
+#tasklist div{
+  height: 10%;
+  padding: 0 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#tasklist div>button{
+  color: inherit;
+  border: none;
+}
+div button:hover{
+  color: gray!important;
+}
+#tasklist .group-btn{
+  height: 100%;
+  width: 40%;
+}
+.first{
+  border: none;
+  border-radius: 50%;
+  outline: .1px solid gray;
+}
+.second{
+  border: 0;
+  opacity: 0;
+}
+/* DIV TASK LIST CONTAINER START */
+#tasklist{
+  height: 55vh;
+  border-radius: 8px;
+}
+/* DIV TASK LIST CONTAINER END */
+
+/* LIGHT CLASSES */
+.light-sub-container{
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(235, 21%, 11%); 
+}
+.light-shadow{
+  box-shadow: 0px 0px 4vh hsl(234, 39%, 85%);
+}
+.light-container{
+  background-color: hsl(236,33%, 92%);
+}
+.light-text{
+  color: hsl(235, 21%, 11%); 
+}
+/* DARK CLASSES */
+.dark-container{
+  background-color: hsl(235, 24%, 19%);
+}
+.dark-sub-container{
+  background-color: hsl(237, 14%, 26%);
+;
+  color: hsl(234, 39%, 85%);
+}
+.dark-shadow{
+  box-shadow: 0px 0px 4vh hsl(235, 21%, 11%);
+}
+.dark-text{
+  color: hsl(234, 39%, 85%);
+}
+.fixed-top{
+  position: fixed;
+  width: 100%;
+  height: 35vh;
+  z-index: -1;
+}
+.checked-btn{
+  background-image: linear-gradient(135deg, hsl(192, 100%, 67%) ,hsl(280, 87%, 65%))!important;
+}
+.checked-img{
+  opacity: 1;
+}
+.unchecked-img{
+  opacity: 0;
+}
+.checked-text{
+  text-decoration-line: line-through;
+  color: hsl(234, 11%, 52%);
+}
+.active{
+  color: blue!important;
+  font-weight: 600;
+}
+.afaire .is-completed,
+.faite .todo:not(.is-completed){
+  display: none!important;
+}
