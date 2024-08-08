@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>TO DO App</title>
+    <script src="./script.js" async></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="light-container">
+    <div id="root">
+      <img class="fixed-top" id="bg">
+      <header>
+        <h1>T O D O</h1>
+        <button><img src="./images/icon-moon.svg"></button>
+      </header>
+      <div id="form" class="light-sub-container light-text">
+        <input type="text" placeholder="Create new Task">
+        <img src="./images/icon-enter.svg" alt="enter" height="20px">
+      </div>
+      <div id="tasklist" class="light-sub-container light-shadow">
+        <ul>
+        </ul>
+        <hr>
+        <div>
+          <span><strong id="count"></strong> items left</span>
+          <div class="group-btn" id="btn-1">
+            <button class="active">All</button><button>Active</button><button>Completed</button>
+          </div>
+          <button id="clear">Clear Completed</button>
+        </div>
+      </div>
+      <div class="light-sub-container light-shadow light-text group-btn" id="btn-2">
+        <button class="active">All</button><button>Active</button><button>Completed</button>
+      </div>
+      
+      <div id="bonus" class="light-text">
+        <p>Drag and drop to reorder list</p>
+      </div>
+    </div>
+    <template id="todolistitem">
+      <li class="light-text todo">
+        <button class="first">
+          <img src="./images/icon-check.svg" alt="" class="unchecked-img">
+        </button>
+        <p class="taskname"></p>
+        <button class="second">
+          <img src="./images/icon-cross.svg">
+        </button>
+      </li>
+    </template>
+</body>
+</html>
