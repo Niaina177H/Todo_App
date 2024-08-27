@@ -240,5 +240,6 @@ div button:hover{
 .first img{
   width: 20px!important;
   height: 20px;
+  object-fit: contain;
 }
 
