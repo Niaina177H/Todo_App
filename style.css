@@ -237,3 +237,8 @@ div button:hover{
 .faite .todo:not(.is-completed){
   display: none!important;
 }
+.first img{
+  width: 20px!important;
+  height: 20px;
+}
+
