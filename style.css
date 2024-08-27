@@ -169,8 +169,6 @@ div button:hover{
   border: none;
   border-radius: 50%;
   outline: .1px solid gray;
-  height: 20px;
-  width: 20px!important;
 }
 .second{
   border: 0;
