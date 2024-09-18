@@ -169,6 +169,9 @@ div button:hover{
   border: none;
   border-radius: 50%;
   outline: .1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .second{
   border: 0;
@@ -239,7 +242,6 @@ div button:hover{
 }
 .first img{
   width: 16px!important;
-  height: 16px;
-  object-fit: contain;
+  height: 16px!important;
 }
 
