@@ -240,8 +240,4 @@ div button:hover{
 .faite .todo:not(.is-completed){
   display: none!important;
 }
-.first img{
-  width: 16px!important;
-  height: 16px!important;
-}
 
