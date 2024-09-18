@@ -238,8 +238,8 @@ div button:hover{
   display: none!important;
 }
 .first img{
-  width: 20px!important;
-  height: 20px;
+  width: 16px!important;
+  height: 16px;
   object-fit: contain;
 }
 
